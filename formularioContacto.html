@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniela Mendoza" />
+    <link rel="stylesheet" href="css/CssFormulario.css">
+    <link rel="stylesheet" href="css/CssFlexBox.css">
+
+    <title>DANIELA MENDOZA</title>
+</head>
+<body>
+    <header>
+        <h1 class="formularioh1"> FORMULARIO DE CONTACTO</h1>
+    </header>
+    <!-- Menu de navegación  -->
+    <nav class="nav">
+        <a href="Indice.html" target="_blank" class="clase_menu">Inicio</a>
+        <a href="Indice.html#sobremi" class="clase_menu">Sobre mí </a>
+        <a href="Indice.html#proyectos" class="clase_menu">Galería</a>
+        <a href="#" class="clase_menu"> Vídeos </a>
+        <a href="formularioContacto.html" class="clase_menu clase_seleccionado"> Contacto </a>
+    </nav>
+    <div class="row cjformulario">
+        <div class="caja-gris">
+            <h2 class="subtituloh2">
+                Tienes algo para decir?
+            </h2>
+            <section class="presentacion-formulario container" id="sobremi">
+                <h2 class="formulariosubtitulo">Mi nombre es Dani Mendoza</h2>
+                <p class="c_parafo">A través de este formulario puedes enviarme un mensaje para ayudarme a corregir errores, a mejorar mi blog, o simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjame un mensaje. Estaré feliz de contestarte!</p>
+
+                <!--Formulario de contacto-->
+                <form>
+
+                    Tu nombre: <input type="text" name="nombre" class="class-input">
+                    Tu dirección de correo: <input type="text" name="correo" class="class-input">
+                    Tu teléfono: <input type="number" name="correo" class="class-input">
+                    Tu mensaje:
+                    <textarea name="mensaje" class="class-textarea" required="required"></textarea>
+
+                    <input type="submit" value="Enviar" class="class-input" />
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="copyrigth"><p>© Daniela Mendoza 2022</p></div>
+    </footer>
+</body>
+</html>
