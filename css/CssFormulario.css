@@ -1,0 +1,81 @@
+/*Estilos para el formulario de contacto*/
+form {
+    /*Transformmos las letras a mayúsculas*/
+    text-transform: uppercase;
+    /*Ancho y alto del formulario*/
+    width: 70%;
+    height: 400px;
+    background: rgb(239, 230, 227);
+    padding: 30px 20px !important;
+    margin: auto;
+}
+/*alto cajas input*/
+input {
+    text-rendering: auto;
+    height: 30px;
+}
+
+.class-input,
+.class-textarea {
+    background-color: #fff;
+    color: #565656;
+    border: 1px solid #f0ab1a;
+    width: 90%;
+    font-size: 16px;
+    display: block;
+    border-radius: 0;
+    margin: 10px;
+}
+
+textarea {
+    height: 60px;
+    line-height: 20px;
+}
+/*Formato al botón de formulario*/
+form input[type="submit"] {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: 0px;
+    word-spacing: 0;
+    width: 35%;
+    text-align: center;
+    margin: 10px 42px !important;
+    padding: 10px;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+    border: 2px solid #f0ab1a;
+    background-color: #f0ab1a;
+    color: #fff !important;
+    border-radius: 5px;
+    height: auto;
+    float: right;
+}
+
+.presentacion-formulario {
+    background: #b9b7b7 !important;
+}
+
+.subtituloh2 {
+    text-align: center;
+}
+
+.cjformulario {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+/* tamano telefono */
+@media (max-width: 600px) {
+    /*tamaño de imagen maximo 100*/
+
+    body, form {
+        font-size: 11px !important;
+    }
+}
+
+/* tamaño tableta */
+@media (max-width: 900px) {
+    body, form {
+        font-size: 13px !important;
+    }
+}

@@ -1,0 +1,264 @@
+/*Estilos con Grid */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*Fijamos un alto de 100vh*/
+    height: 100vh;
+    /* Se fija el fondo con imagen centrada, que no se repita*/
+    background-image: linear-gradient(135deg, #9192967e 0%, #f1edf598 90%), url('../imagen/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*Estilos para la cabecera*/
+header {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Estilos para el menú*/
+nav {
+    /* grid de 5 columnas automáticas de ancho*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 550px;
+    margin: auto;
+}
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+.clase_menu {
+    color: rgb(242, 234, 234);
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.clase_seleccionado {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+/*Estilos para el menú*/
+
+.row {
+    display: grid;
+    /* se especifica el número (y el ancho) de las columnas en un diseño de cuadrícula.*/
+    grid-template-columns: 1fr;
+}
+
+section, .caja-gris {
+    /*especificamos el tamaño de un elemento de cuadrícula */
+    grid-column-gap: 10px;
+    padding: 20px;
+}
+
+main {
+    display: block;
+    background: #b9b7b7;
+    margin-top: 500px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.c_parafo {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+/*estilos para el contenedor*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px;
+    max-width: 1200px;
+}
+
+/*Comienza seccion*/
+
+.presentacion {
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentacion_picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentacion_copy {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentacion_cta {
+    display: inline-block;
+    margin-top: 30px;
+    background: #f0ab1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 40px;
+}
+
+/*centrar imagenes*/
+.c_img {
+    text-align: center;
+}
+/*Alinear a la izquierda*/
+.c_img--left {
+    text-align: left;
+}
+
+.c_picture {
+    max-width: 80%;
+}
+
+.boton_contactame {
+    display: inline-block;
+    background: #fff;
+    padding: 20px 40px;
+    color: #f0ab1a;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.boton_h2 {
+    display: inline-block;
+    background: #fff;
+    padding: 20px 40px;
+    color: #f0ab1a;
+    text-decoration: none;
+    border-radius: 40px;
+    position: absolute;
+    left: 200px;
+    top: 400px;
+}
+
+.detalle {
+    min-height: 400px;
+    display: grid;
+    /*dos columnas*/
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    /*Espaciado entre filas*/
+    justify-items: center;
+    align-items: center;
+    /*centrar todo horizaontal y vertical*/
+}
+
+.copyrigth {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Enlace visitado*/
+nav a:visited {
+    color: rgb(239, 230, 227);
+}
+
+/* Pasar raton sobre el enlace */
+nav a:hover {
+    color: rgb(207, 132, 26);
+}
+/*Transformar la imagen a escala 1.8 al pasar el ratón */
+img:hover {
+    transform: scale(1.8) !important;
+}
+
+.copyrigth:hover {
+    color: #0e0d0d;
+    font-size: 20px;
+}
+
+/*tamaño móbil */
+@media (max-width: 600px) {
+    .row {
+        display: grid;
+    }
+
+    .container {
+        width: auto;
+        margin: 0;
+        overflow: hidden;
+        padding: 40px;
+    }
+
+    .detalle {
+        min-height: 400px;
+        display: grid;
+        /*una columnas*/
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+        /*Espaciado entre filas*/
+        justify-items: center;
+        align-items: center;
+        /*centrar todo horizaontal y verttical*/
+    }
+
+    nav {
+        /*grid de una columna*/
+        display: grid;
+        grid-template-columns: auto;
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    .c_picture {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+/* tamaño tableta */
+@media (max-width: 900px) {
+    .row {
+        display: grid;
+    }
+
+    .container {
+        width: auto;
+        margin: 0;
+        overflow: hidden;
+        padding: 40px;
+    }
+
+    .detalle {
+        min-height: 400px;
+        display: grid;
+        /*dos columnas*/
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+        /*Espaciado entre filas*/
+        justify-items: center;
+        align-items: center;
+        /*centrar todo horizaontal y verttical*/
+    }
+
+    nav {
+        /*grid de una columna*/
+        display: grid;
+        grid-template-columns: auto;
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .c_picture {
+        width: 400px;
+    }
+}
